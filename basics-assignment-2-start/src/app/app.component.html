@@ -8,9 +8,12 @@
         <li>Upon clicking the button, the username should be reset to an empty string</li>
       </ol>
       <hr>
-      <button class="btn btn-primary" [disabled]="!allowNewUser" (click)="onCreateUser()">Add User</button>
-      <input type="text" class="form-control" [(ngModel)]="userName" (input)="onInput($event)">
       <p>{{userName}}</p>
+      <input type="text" class="form-control" [(ngModel)]="userName" >
+      <button class="btn btn-primary" 
+            [disabled]="userName===''" 
+            (click)="userName = ''"
+            >Resret User</button>
     </div>
   </div>
 </div>
