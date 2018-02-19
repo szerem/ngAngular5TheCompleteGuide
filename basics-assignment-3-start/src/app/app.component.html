@@ -11,9 +11,9 @@
       <hr>
       <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
       <p *ngIf="showSecret">Secret Password = tuna</p>
-      <div *ngFor="let l of logs"
-            [ngStyle]="{ backgroundColor : l >= 5 ?'blue':'transporent'}"
-            [ngClass]="{'text-white': l >= 5 }"
+      <div *ngFor="let l of logs; let i = index"
+            [ngStyle]="{ backgroundColor : i >= 4 ?'blue':'transporent'}"
+            [ngClass]="{'text-white': i >= 4 }"
       > {{ l }} </div>
     </div>
   </div>
