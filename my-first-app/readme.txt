@@ -1,4 +1,5 @@
-np serve 
+npm install -g angular-cli -- na kazdej maszynie 
+ng serve 
 
 npm install bootstrap@3 --save
 
