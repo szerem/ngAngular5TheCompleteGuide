@@ -1,0 +1,10 @@
+TS <==> HTML
+jedno kierunkowe -->  strings
+{{ data }}
+[property]="data"
+
+jednokierunkowe <-- events
+(event)="expression"
+
+dwukierunkowe 
+[(ngModel)]="data"  
