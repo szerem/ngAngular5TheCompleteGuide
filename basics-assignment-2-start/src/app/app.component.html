@@ -1,6 +1,16 @@
-<ol>
-  <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
-  <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
-  <li>Add a button which may only be clicked if the username is NOT an empty string</li>
-  <li>Upon clicking the button, the username should be reset to an empty string</li>
-</ol>
+<div class="content">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Add a Input field which updates a property ('username') via Two-Way-Binding</li>
+        <li>Output the username property via String Interpolation (in a paragraph below the input)</li>
+        <li>Add a button which may only be clicked if the username is NOT an empty string</li>
+        <li>Upon clicking the button, the username should be reset to an empty string</li>
+      </ol>
+      <hr>
+      <button class="btn btn-primary" [disabled]="!allowNewUser" (click)="onCreateUser()">Add User</button>
+      <input type="text" class="form-control" [(ngModel)]="userName" (input)="onInput($event)">
+      <p>{{userName}}</p>
+    </div>
+  </div>
+</div>
