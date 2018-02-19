@@ -1,4 +1,8 @@
-npm install -g angular-cli -- na kazdej maszynie 
+npm install -g npm 
+npm uninstall -g angular-cli @angular/cli
+npm cache clean 
+npm install -g @angular/cli 
+npm install 
 ng serve 
 
 npm install bootstrap@3 --save
